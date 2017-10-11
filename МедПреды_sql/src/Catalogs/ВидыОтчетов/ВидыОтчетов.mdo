@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9fa38a8-3391-4ac3-89f6-06a4822d7850">
+  <producedTypes>
+    <objectType typeId="1af24505-962d-4afa-9957-50b0abf7d7b5" valueTypeId="83143911-af29-4d86-8b48-6f7eb884d269"/>
+    <refType typeId="4ba23a2a-f8b6-46d1-b4fb-e5139b18d43b" valueTypeId="35bd31c4-af96-45ef-97f9-98794113e8d5"/>
+    <selectionType typeId="d76418ae-9992-4e24-86f2-10eabd1e7581" valueTypeId="272fc336-34ea-4230-a9c4-7655346e4aee"/>
+    <listType typeId="61ed8a0f-ffe9-491c-88ae-a449a287aaa4" valueTypeId="789768f9-c4dc-4b88-9906-a45857b6a281"/>
+    <managerType typeId="ad8b1de7-3b1c-450b-9d98-c6cf272b4868" valueTypeId="6dfcaef4-2583-4e28-b0b9-9f53527e2133"/>
+  </producedTypes>
+  <name>ВидыОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды отчетов</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.ВидыОтчетов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОтчетов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Проекты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a8b5b798-30a3-49a7-93f1-6c551d8ae0b9">
+    <name>ВидКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид контрагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыКонтрагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <tabularSections uuid="265a77d0-f345-45d7-a982-0133102d9f38">
+    <producedTypes>
+      <objectType typeId="5b1b68e2-56f6-4621-b742-183e535bd6c6" valueTypeId="2546a66a-8290-4660-b490-37a7be96c6ed"/>
+      <rowType typeId="40a888a3-70c4-48c0-850e-2845f66bbc0c" valueTypeId="2483779b-b8bc-4020-9471-016ca5c0e2b1"/>
+    </producedTypes>
+    <name>КолонкиОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонки отчета</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="c775a515-0c05-4463-86fb-6658e769f92e">
+      <name>Пункт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

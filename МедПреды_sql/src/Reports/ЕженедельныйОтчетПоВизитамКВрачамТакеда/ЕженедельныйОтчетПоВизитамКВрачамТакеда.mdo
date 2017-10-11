@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2d32837-9aab-409c-8016-9c57ddb2c8b0">
+  <producedTypes>
+    <objectType typeId="00138b25-3b07-4e49-9f72-dbe894bbc349" valueTypeId="3347bccc-6524-4041-81c8-b67d44663085"/>
+    <managerType typeId="7cb0df77-e7b5-4800-ae72-4226eac07c00" valueTypeId="c02d6b1c-be15-4dfd-a786-3771d349a4d4"/>
+  </producedTypes>
+  <name>ЕженедельныйОтчетПоВизитамКВрачамТакеда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Еженедельный отчет по визитам к врачам (Такеда)</value>
+  </synonym>
+  <comment></comment>
+  <mainDataCompositionSchema>Report.ЕженедельныйОтчетПоВизитамКВрачамТакеда.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="2ef8b20a-c807-47aa-a6fd-bca97e6911eb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

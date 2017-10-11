@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da137c78-2449-4f9f-bf1a-ea4acb24086d">
+  <producedTypes>
+    <objectType typeId="50d6e9ee-e1ad-4c74-ac80-240d2ef67237" valueTypeId="35cd82d9-e6fc-4e64-9d40-27d82e9d2e36"/>
+    <refType typeId="d2cdac35-933d-4a92-9344-f32bb62177b9" valueTypeId="3fb4dff1-d7f8-40a8-82a7-9ddeb55d6dbe"/>
+    <selectionType typeId="bd70be96-be64-45dc-a64c-d92f4790095c" valueTypeId="6db464cf-6c12-47de-893a-4b85947c295b"/>
+    <listType typeId="7e3a5451-579d-4528-b7dd-596e40a18e8e" valueTypeId="feed7b20-e9ea-4b6a-b4ea-6b7a5b43295f"/>
+    <managerType typeId="bf41955f-0a82-4146-a1aa-12ff838597c9" valueTypeId="890f1c98-cd43-4cbc-9445-d659604cc3d0"/>
+  </producedTypes>
+  <name>БизнесРегионы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес-регионы</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.БизнесРегионы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.БизнесРегионы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Бизнес-регион</value>
+  </objectPresentation>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <commands uuid="5f2ae1d2-c55e-4002-8098-6779c6b603a0">
+    <name>СписокБизнесРегионов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес-регионы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Nomenclature</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Справочники</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

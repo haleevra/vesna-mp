@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4021e1c6-cd45-4f69-aa67-cf5071f698bf">
+  <name>КонструкторФормул</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конструктор формул</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

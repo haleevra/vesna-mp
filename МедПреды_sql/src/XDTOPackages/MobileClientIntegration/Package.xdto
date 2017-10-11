@@ -1,0 +1,170 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.prof-it.ru/ma/MobileExchange">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<import namespace="http://v8.1c.ru/8.3/data/ext"/>
+	<valueType name="ТипСостоянияВизитов" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Открыт</enumeration>
+		<enumeration xsi:type="xs:string">ВРвботе</enumeration>
+		<enumeration xsi:type="xs:string">Выполнен</enumeration>
+		<enumeration xsi:type="xs:string">Закрыт</enumeration>
+	</valueType>
+	<valueType name="ТипВидыКонтрагентов" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Аптека</enumeration>
+		<enumeration xsi:type="xs:string">ЛПУ</enumeration>
+	</valueType>
+	<valueType name="ТипВидыВизитов" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Первичный</enumeration>
+		<enumeration xsi:type="xs:string">Вторичный</enumeration>
+	</valueType>
+	<valueType name="ТипПрофилиМобильногоПриложения" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Супервайзер</enumeration>
+		<enumeration xsi:type="xs:string">МедПредставитель</enumeration>
+	</valueType>
+	<objectType name="Объекты">
+		<property xmlns:d3p1="http://www.prof-it.ru/ma/MobileExchange" name="объекты" type="d3p1:Объект" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Объект">
+		<property name="УникальныйИдентификатор" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Справочник" base="d2p1:Объект">
+		<property name="Наименование" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Контрагенты" base="d2p1:Справочник">
+		<property name="ЭтоГруппа" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Родитель" type="d2p1:Контрагенты" lowerBound="0" nillable="true"/>
+		<property name="ВидКонтрагента" type="d2p1:ТипВидыКонтрагентов"/>
+		<property name="Сеть" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Адрес" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Индекс" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Страна" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Город" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Улица" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Дом" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Телефон" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="АдресЭП" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="КонтактныеЛица" base="d2p1:Справочник">
+		<property name="Владелец" type="d2p1:Контрагенты" lowerBound="1" nillable="false"/>
+		<property name="СпециализацияВрача" type="d2p1:СпециализацияВрача" lowerBound="0" nillable="true"/>
+		<property name="Телефон" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="АдресЭП" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="СпециализацияВрача" base="d2p1:Справочник">
+		<property name="ЭтоГруппа" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Родитель" type="d2p1:СпециализацияВрача" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Товары" base="d2p1:Справочник">
+		<property name="ЭтоГруппа" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Родитель" type="d2p1:Товары" lowerBound="0" nillable="true"/>
+		<property name="Артикул" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Штрихкод" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Проекты" base="d2p1:Справочник">
+		<property name="ЛПУ" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="Аптеки" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="Цикличность" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="ЧекЛист" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокаЧекЛист" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Пункт" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ТипЗначения" type="xs:string" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Препараты" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокаПрепараты" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Товар" type="d2p1:Товары" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Конкуренты" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокаКонкуренты" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Товар" type="d2p1:Товары" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Документ" base="d2p1:Объект">
+		<property name="Номер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Визиты" base="d2p1:Документ">
+		<property name="Операция" type="d2p1:ТипПрофилиМобильногоПриложения" lowerBound="0"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ВидВизита" type="d2p1:ТипВидыВизитов" lowerBound="0" nillable="true"/>
+		<property name="Проект" type="d2p1:Проекты" lowerBound="0" nillable="true"/>
+		<property name="Контрагент" type="d2p1:Контрагенты" lowerBound="0" nillable="true"/>
+		<property name="КонтактноеЛицо" type="d2p1:КонтактныеЛица" lowerBound="0" nillable="true"/>
+		<property name="СостояниеВизита" type="d2p1:ТипСостоянияВизитов" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.3/data/ext" name="ГеоМеткаНачало" type="d3p1:GeographicCoordinates" lowerBound="0" nillable="true"/>
+		<property name="ДатаНачало" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.3/data/ext" name="ГеоМеткаОкончание" type="d3p1:GeographicCoordinates" lowerBound="0" nillable="true"/>
+		<property name="ДатаОкончание" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Оценка" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="ЧекЛист" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокаЧекЛист" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Пункт" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ТипЗначения" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ЗначениеСтрока" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ЗначениеЧисло" type="xs:decimal" lowerBound="0" nillable="true"/>
+						<property name="ЗначениеДата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+						<property name="ЗначениеБулево" type="xs:boolean" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Препараты" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокаПрепараты" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Товар" type="d2p1:Товары" lowerBound="0" nillable="true"/>
+						<property name="Матрица" type="xs:boolean" lowerBound="0" nillable="true"/>
+						<property name="Наличие" type="xs:boolean" lowerBound="0" nillable="true"/>
+						<property name="Заказ" type="xs:boolean" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Цены" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокаЦены" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Товар" type="d2p1:Товары" lowerBound="0" nillable="true"/>
+						<property name="Цена" type="xs:decimal" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Картинка" type="xs:base64Binary" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="УдалениеОбъекта" base="d2p1:Объект">
+		<property name="Тип" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Настройки" base="d2p1:Объект">
+		<property name="Профиль" type="d2p1:ТипПрофилиМобильногоПриложения"/>
+		<property name="ТекущийПользователь" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="ВидыМероприятий" base="d2p1:Справочник">
+		<property name="Владелец" type="d2p1:Проекты" lowerBound="1" nillable="false"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Мероприятия" base="d2p1:Документ">
+		<property name="Проведен" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ВидМероприятия" type="d2p1:ВидыМероприятий" lowerBound="0" nillable="true"/>
+		<property name="Проект" type="d2p1:Проекты" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+</package>

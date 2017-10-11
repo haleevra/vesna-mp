@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5abc7880-fd7a-47f4-a3a3-bec4aa6f9fd9">
+  <producedTypes>
+    <refType typeId="a40c0027-c904-483f-b35d-a51d4c3b9e0f" valueTypeId="82df5ba0-cf3d-4b69-ae88-801b766c0c23"/>
+    <listType typeId="dca2d944-ca66-48ba-bb29-1ae3208ddfab" valueTypeId="75a06ddc-454b-4a73-ba61-d9302b3d94da"/>
+    <managerType typeId="90e4059c-64a8-4446-82dd-8a8d9f79626d" valueTypeId="0919c55a-76f7-4003-b0e5-250ff0d88e8d"/>
+  </producedTypes>
+  <name>ПрофилиМобильногоПриложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Профили мобильного приложения</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="db5ecd60-3fc7-4508-8095-a33f499bd86a">
+    <name>Супервайзер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супервайзер</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7cdf04f7-c75c-449e-b4a5-f54d0d2d92c6">
+    <name>МедПредставитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мед.представитель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

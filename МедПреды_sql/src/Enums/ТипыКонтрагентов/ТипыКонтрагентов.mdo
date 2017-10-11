@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6b4b04e-11e1-4863-abd0-935b3b246198">
+  <producedTypes>
+    <refType typeId="9b713ea1-7238-4900-9739-1c44e81a228e" valueTypeId="5bba43b0-641f-4040-9f20-87172061e4e2"/>
+    <listType typeId="1a04bb71-c73b-400c-ad91-eedbd6d3baaa" valueTypeId="3240f608-5a4d-4ec9-9baa-b91a050208af"/>
+    <managerType typeId="2ab22130-bd87-47ff-a9d0-4d46dd85639e" valueTypeId="7d773d76-6a13-4cdc-a2f1-c3ac9d547d50"/>
+  </producedTypes>
+  <name>ТипыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы контрагентов</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f1df639b-d0d6-4c5a-be9f-fe40514bb507">
+    <name>ЮридическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юридическое лицо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="224430ed-f14b-43a5-a555-1f0e8d8d7dba">
+    <name>ИндивидуальныйПредприниматель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индивидуальный предприниматель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="443de79e-3c1d-4498-b53e-77ce4b2a5167">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

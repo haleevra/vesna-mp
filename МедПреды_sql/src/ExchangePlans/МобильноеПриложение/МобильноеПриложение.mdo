@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b45e3ec3-0c23-4f31-ab71-f80370405db6" thisNode="c6e39b10-5922-404c-a1ed-70a21c67f4fb">
+  <producedTypes>
+    <objectType typeId="110cd30a-888f-4698-a2cd-43096d74d9ba" valueTypeId="e00fd590-68c3-4375-8349-f93e1dd71b72"/>
+    <refType typeId="6f12001d-d941-47c2-bd89-1a39a373613f" valueTypeId="cf6d3fba-d33a-477e-a63d-c2a5c60f356e"/>
+    <selectionType typeId="f9240ea0-d647-43ab-a0af-e7dbf966dfc4" valueTypeId="417720f4-f0f9-427e-8d9a-3d189eb47cc1"/>
+    <listType typeId="32bbc4c6-88c9-482b-b7d9-9dc315c03ea8" valueTypeId="6c8bb2c8-5706-45ca-8e1c-4bb75dce5db7"/>
+    <managerType typeId="4a67ca44-45d5-43f0-bdbf-e7ac80b8340f" valueTypeId="d6c5f8ed-41ae-487d-8b9f-5efac9b6f2a2"/>
+  </producedTypes>
+  <name>МобильноеПриложение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мобильное приложение</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>ExchangePlan.МобильноеПриложение.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.МобильноеПриложение.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>ThisNode</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>ReceivedNo</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>SentNo</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Мобильные приложения</value>
+  </listPresentation>
+  <codeLength>40</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <content>
+    <mdObject>Catalog.Проекты</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.Мероприятие</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.КонтактныеЛица</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Контрагенты</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ВидыМероприятий</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.Визит</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Товары</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.СпециализацияВрача</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.МобильноеПриложение.Form.ФормаУзла</defaultObjectForm>
+  <defaultListForm>ExchangePlan.МобильноеПриложение.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ExchangePlan.МобильноеПриложение.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="ded6a45b-2afb-4339-bf0a-8794a7e68aaf">
+    <name>Профиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПрофилиМобильногоПриложения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="982b6517-1d81-46ce-9870-11da361dff3a">
+    <name>ИДПодписчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДПодписчика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b77e6232-9202-4cd9-83b3-46f3001e2748">
+    <name>ВерсияМобильногоПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия мобильного приложения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a2f1d7c1-6e05-41ab-b9d1-e850438f4489">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8efec984-4d42-4fb2-bca6-f35dc253ab4a">
+    <name>ДатаПоследнейСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней синхронизации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8f0a37d6-eaab-40d4-a783-5d3c398a8401">
+    <name>ДоступЗапрещен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступ запрещен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="524d8063-f6a0-45de-aa2d-38abadf6c235">
+    <name>НужнаИнициализацияУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нужна инициализация узла</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="bec88ad5-e1b6-42aa-a380-81068a68e8b1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="341aaea9-ea7e-4ee7-9f46-ed6e900d4d31">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f7caba59-bdf8-42b3-8485-0afcfdff9576">
+    <name>ФормаПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подключения</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2165686f-4b46-485c-bd64-7d0a8d0db318">
+    <name>ОткрытьМобильноеПриложение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мобильное приложение</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Информация</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:ExchangePlan>

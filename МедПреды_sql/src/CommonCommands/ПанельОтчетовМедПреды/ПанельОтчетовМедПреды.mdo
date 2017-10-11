@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c56ab6f-f7ea-4052-b3a9-5a1dd6ee8bb3">
+  <name>ПанельОтчетовМедПреды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты по Мед.представителям</value>
+  </synonym>
+  <comment></comment>
+  <group>ActionsPanelReports</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Отчеты по деятельности мед.представителей и супервайзеров</value>
+  </toolTip>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

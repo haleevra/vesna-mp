@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b49c443-8e43-46e8-9f78-e79366f16edc">
+  <producedTypes>
+    <objectType typeId="ca83438f-7235-4921-b7ab-8fc2e6d58a33" valueTypeId="15ecfade-0f2c-4bce-b512-81951cb86896"/>
+    <refType typeId="3fe4809e-6b95-4838-a592-f8249f9fe660" valueTypeId="53ae8cf8-cfa6-4d7e-b2c9-5a7456a071d4"/>
+    <selectionType typeId="602da907-7430-4f0a-9b53-fab738e0bb75" valueTypeId="d49e98b8-d8b5-4b0a-b2b2-ba9c362d6dcb"/>
+    <listType typeId="4ef1c514-6476-45ce-be5f-e76efb3e4900" valueTypeId="0e0097c1-0bb4-4836-8220-4a8f97bb195d"/>
+    <managerType typeId="ea23915b-c1cd-4b4c-9be4-3adf2fad78ef" valueTypeId="306acbb0-9d37-4d91-ac26-e2eab93a9fe1"/>
+  </producedTypes>
+  <name>КонтактныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.КонтактныеЛица.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КонтактныеЛица.StandardAttribute.Code</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment>Контрагент, участвующий в связи</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент, участвующий в связи</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Контрагенты.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Фамилия, имя и отчество контактного лица</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Контактное лицо</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Список физических лиц, с помощью которых осуществляется связь между контрагентом и предприятием.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КонтактныеЛица.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КонтактныеЛица.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.КонтактныеЛица.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="796a71dd-3eae-408e-a8de-72c467c9ec71">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создан</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата создания контактного лица.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bbdf133a-a1a6-4fc4-9558-059046f66cdc">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительная информация о взаимодействии с контактным лицом.</value>
+    </toolTip>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e11af1de-4134-44b2-b4d2-96294e3bc016">
+    <name>Недействителен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Недействительное</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контактное лицо больше не работает у контрагента, но сведения о нем сохранены.
+Недействительные контактные лица по умолчанию скрываются из всех списков программы.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f600ccc5-0f17-4fd1-8bd9-7539d9ee4481">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для упорядочивания (служебный)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <indexing>IndexWithAdditionalOrder</indexing>
+  </attributes>
+  <attributes uuid="889607ff-e5bb-4266-8859-21710bacb0df">
+    <name>СпециализацияВрача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Специализация врача</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СпециализацияВрача</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <tabularSections uuid="75d42d09-f4ee-4c3d-9d22-ea1d978c4ef2">
+    <producedTypes>
+      <objectType typeId="7a1341bb-eb57-4108-b92b-55b97da4b88b" valueTypeId="b3242528-fcbd-45ce-ba7c-2c499060ed60"/>
+      <rowType typeId="547cb0c7-8b18-4ece-b107-47d3c3938d72" valueTypeId="1dde1c95-590f-4947-8273-fa2190380824"/>
+    </producedTypes>
+    <name>КонтактнаяИнформация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактная информация</value>
+    </synonym>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Контактная информация контрагента</value>
+    </toolTip>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ef48f14e-794a-48f7-be9b-6e2a8294fdce">
+      <name>Тип</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.ТипыКонтактнойИнформации</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тип контактной информации (телефон, адрес и т.п.)</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9636b2c6-546a-4a22-9881-418fe691aa47">
+      <name>Вид</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВидыКонтактнойИнформации</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид контактной информации</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8c082b88-39bb-44a5-99be-05ead63d9144">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Представление контактной информации для отображения в формах</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b2f678d4-4945-4ac5-bd31-452d5d1bc30a">
+      <name>ЗначенияПолей</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значения полей</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Служебное поле, для хранения контактной информации</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="91e168a5-7e7d-4421-9a1d-3fb9906f3cac">
+      <name>Страна</name>
+      <synonym>
+        <key>ru</key>
+        <value>Страна</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Страна (заполняется для адреса)</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fa76586f-af8e-43c0-8149-25b50ac29106">
+      <name>Регион</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регион</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Регион (заполняется для адреса)</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f57c3f25-cc9b-4da5-b244-20973169f08a">
+      <name>Город</name>
+      <synonym>
+        <key>ru</key>
+        <value>Город</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Город (заполняется для адреса)</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b9b08476-f1ae-4b73-860a-0fa56db5879e">
+      <name>АдресЭП</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес ЭП</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Адрес электронной почты</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7c25d082-8231-4a4b-bd27-61e9cfecfb69">
+      <name>ДоменноеИмяСервера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доменное имя сервера</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Доменное имя сервера электронной почты или веб-страницы</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8c1dd5b0-85ac-4296-8fd1-03be1c91b2c3">
+      <name>НомерТелефона</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер телефона</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный номер телефона</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c5a8cafa-913d-417a-a9d7-789a50a0ad9c">
+      <name>НомерТелефонаБезКодов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер телефона без кодов</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер телефона без кодов и добавочного номера</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5030da6e-b978-4a26-9448-0d7bffbf6498">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d30a9dd-c836-4db5-b41d-d35d40df1216">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="08b3a09e-7417-4d71-a61a-338da48d8928">
+    <name>КонтактныеЛицаКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контакты</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Контрагенты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

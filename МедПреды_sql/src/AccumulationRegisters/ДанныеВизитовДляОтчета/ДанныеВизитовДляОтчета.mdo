@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9429c5ef-dede-4cd0-906e-aef9f9558210">
+  <producedTypes>
+    <selectionType typeId="f6b28934-2699-4cab-ac8f-fe7b9e0bbaff" valueTypeId="d7c546cd-8c51-4b57-a6ac-fc3f0c4415db"/>
+    <listType typeId="8aa1fdbd-2717-46b5-b576-2805e1a3625a" valueTypeId="c04b6605-7af2-4e85-8cf7-c565ed61b14a"/>
+    <managerType typeId="4294ee57-b41e-4089-b459-f0ae58efef28" valueTypeId="fdc84baf-9514-49d7-b794-6ba36492233c"/>
+    <recordSetType typeId="38ac17a9-b0c7-419e-bced-726db786fc62" valueTypeId="0ab07569-124a-43a9-9923-750b7a67d3a2"/>
+    <recordKeyType typeId="1f432e7b-d6f4-428a-8461-f3e93ee79e58" valueTypeId="aac803b5-33fa-4043-84f8-fd79a80e1df9"/>
+    <recordType typeId="33384580-aa2c-421d-805f-5f8a2de1ca2e" valueTypeId="70d70df8-1d03-4209-a7a9-382fe93a957b"/>
+  </producedTypes>
+  <name>ДанныеВизитовДляОтчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные визитов для отчета</value>
+  </synonym>
+  <comment></comment>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c26ddb9d-43a8-4f96-b789-1a93658bb962">
+    <name>Широта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>11</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="d5c04ea8-ea4f-4e68-a96c-7feb12de7336">
+    <name>Долгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>11</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="70ac19a4-5265-418e-998c-f868aca1f250">
+    <name>Исправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="c49984d5-6c96-4792-a879-7dfdc1c9d6ab">
+    <name>Визит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Визит</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Визит</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8eef44d7-e3c5-41b3-9682-440ceca435fb">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8932ce36-830c-4307-9187-ef726b77d52c">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8b631121-a501-4a5b-80d6-a5baa42fa16b">
+    <name>ПредыдущийВизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предыдущий визит</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Визит</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="aa4b4136-66ac-46a6-9e4b-16304f8fb5a8">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="28282a31-530c-4d43-8d81-b6d11bc4d57d">
+    <name>КонтактноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Contact</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КонтактныеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>0:0ba72f1c-16c3-4206-a738-b20617bea67a</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2ba480d5-3b55-4ead-a1b1-540d0b31905d">
+    <name>Начало</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="363bfcbf-06c2-46d0-aeed-96295c408b08">
+    <name>Окончание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6c66162b-d7b7-40bc-a8d1-bd8555b85792">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

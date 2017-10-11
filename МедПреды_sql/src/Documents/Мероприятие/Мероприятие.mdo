@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75454a87-458d-45f2-b3bc-2d41cec1fdd7">
+  <producedTypes>
+    <objectType typeId="ad81ad86-fd80-4ad4-90f8-815ed6728256" valueTypeId="ca9a0fc4-6ecb-44d3-b2d5-e22e3dd3c638"/>
+    <refType typeId="aa5d01f1-e560-48bf-abbf-684dc5258777" valueTypeId="81f81214-15d4-4726-8e67-2dc4bf7134c8"/>
+    <selectionType typeId="83766569-55eb-4b53-bab0-66cd80319e1b" valueTypeId="49908351-49ad-4d5e-9347-ae07ac69af20"/>
+    <listType typeId="341af477-0765-4d54-9a1b-6b27c7d67972" valueTypeId="445386f0-5482-4c5d-bb5b-09762a2973ff"/>
+    <managerType typeId="080426b7-7ee4-4fca-b06c-da6b0c86a7c8" valueTypeId="87f1edd2-d299-42f7-8837-81be0b8bdaf7"/>
+  </producedTypes>
+  <name>Мероприятие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мероприятие</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Document.Мероприятие.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>Posted</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Date</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Number</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Мероприятие.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.Мероприятие.Form.ФормаСписка</defaultListForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="59d1c316-5067-42d2-adf2-73bd4880f4be">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="20417ca4-047f-4098-a379-d27d52a2cbe3">
+    <name>ВидМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид мероприятия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыМероприятий</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.Мероприятие.Attribute.Проект</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8d65e9dd-9fe3-4d9d-a29c-55422608cdb2">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="af6ee59e-79d1-4bd4-b295-7fffd945367f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заметки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Notes</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="50c46155-8139-4229-8646-2c2e395b7b3e">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ce140dc9-6ee6-4307-aa51-abfc432cb2f4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="e2067e2f-27c7-49db-bad8-80a96bf489fa">
+    <name>СписокМероприятий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мероприятия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Visits</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Визиты</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="56d5c2fb-3c95-4cfb-8e1f-829c4a41d07d">
+    <name>ОформитьМероприятие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оформить мероприятие</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Checkout</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Визиты</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Document>

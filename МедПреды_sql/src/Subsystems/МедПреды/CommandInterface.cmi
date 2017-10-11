@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>CommandGroup.Справочники</group>
+      <commands>Catalog.Проекты.Command.СписокПроектов</commands>
+      <commands>Catalog.БизнесРегионы.Command.СписокБизнесРегионов</commands>
+      <commands>Catalog.Контрагенты.Command.СписокКонтрагентов</commands>
+      <commands>Catalog.Товары.Command.СписокТоваров</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.МедПреды.Subsystem.МобильныйКлиент</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

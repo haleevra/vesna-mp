@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f44b460-1bc6-43d5-9238-62419b880877">
+  <producedTypes>
+    <selectionType typeId="f2ee048d-63a9-4884-a1c1-7fa308939012" valueTypeId="97fc6310-86a8-4fa1-ae25-7249623a7a4b"/>
+    <listType typeId="cc505904-0bce-4823-b10d-d97a144262b0" valueTypeId="7b19e7e5-882f-4409-9725-7d6713c2aef4"/>
+    <managerType typeId="3a0214fc-1d8e-4b0c-a994-488cb769bc77" valueTypeId="a8ef51c2-4805-45bf-959e-3b04926de476"/>
+    <recordSetType typeId="aea25586-4207-40e3-90a0-5f48d6ccfd85" valueTypeId="ffd2d051-dd5a-4879-b96b-661547ade239"/>
+    <recordKeyType typeId="ec1cfaee-1ad7-4560-81d8-b6c78c35deba" valueTypeId="0244386b-a44f-4025-b508-da627c783808"/>
+    <recordType typeId="4413cd6f-54bb-43af-974e-c3a221ab128d" valueTypeId="6245ad78-4033-4fea-a9e0-5bc8608bbd8d"/>
+    <recordManagerType typeId="b66e791f-d8a0-4902-a36e-b486ba5b7ca2" valueTypeId="e40a83db-6563-4633-a282-8ce94bad20ec"/>
+  </producedTypes>
+  <name>ДоступныеПроектыЗаказчика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступные проекты заказчика</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="285bb9b5-a791-4d83-adb1-62930ae31134">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b8b31686-d639-405a-8750-3b77f503edd1">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

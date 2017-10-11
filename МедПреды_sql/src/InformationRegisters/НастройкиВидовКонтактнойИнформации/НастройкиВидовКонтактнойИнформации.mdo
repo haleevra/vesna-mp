@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2695048a-7564-4d4f-a576-1d788d591301">
+  <producedTypes>
+    <selectionType typeId="acc8c1c1-66ba-48d1-b4d7-8025990de912" valueTypeId="326c5b17-5dea-46bc-9763-41b68c596d7f"/>
+    <listType typeId="c2ac3937-6cc4-417c-b770-d2405de6628f" valueTypeId="91788b38-70b3-4cda-9cc4-33a287550e44"/>
+    <managerType typeId="81d3945d-9316-4556-a339-42fc94620707" valueTypeId="2cc0a34f-aad3-492b-81d1-cdbcf1e27e78"/>
+    <recordSetType typeId="f963f2cb-b7f1-41a3-9e24-0cd71214f0da" valueTypeId="5a58643c-c010-46de-9da9-b4cbbb8c2d8e"/>
+    <recordKeyType typeId="d9d78256-a224-404d-bf47-dfccfe1ca7a0" valueTypeId="094f9ba9-74c1-4347-90df-4577e78398f5"/>
+    <recordType typeId="30a41799-6b4c-4919-a248-af6e64511d5a" valueTypeId="2b684407-4215-4ff4-91a9-1b8f0b27fcb3"/>
+    <recordManagerType typeId="a9c94edf-1013-4d24-a1f4-11d3f4d32cc6" valueTypeId="79b4c27f-4eb4-4c1e-af33-3e14ca767609"/>
+  </producedTypes>
+  <name>НастройкиВидовКонтактнойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки видов контактной информации</value>
+  </synonym>
+  <comment></comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="24165ecf-4331-4f65-bd0b-bddf70aea25f">
+    <name>ВыводитьВФормеВсегда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить в форме всегда</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид контактной информации всегда отображается и предлагается к заполнению в карточке владельца</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="680c3de2-b7bd-41dd-8fc0-a324e3848ef8">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид контактной информации с дополнительными настройками</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e2c2f962-65d7-4510-b862-ff4646befb1f">
+    <name>РедактированиеНастроекВида</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование настроек вида</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="26ff48ce-cc91-4dd6-86d0-acb395883b14">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa4ef83f-17d6-49fa-8ee5-7619f7e6dec9">
+  <name>НастройкаПорядкаЭлементовСлужебныйВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка порядка элементов служебный вызов сервера</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.4">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>Configuration.МедПреды</name>
+		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>WebClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SaveUserData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Проекты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>Проекты ИЗ Справочник.Проекты КАК Проекты
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+	ПО Проекты.Ссылка = ДоступныеПроектыЗаказчика.Проект
+		И (ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиВидовКонтактнойИнформации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ДоступныеПроектыЗаказчика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ГДЕ Заказчик = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>Пользователи ГДЕ Пользователи.Ссылка В
+			(ВЫБРАТЬ
+				Пользователи.Ссылка КАК Ссылка
+			ИЗ
+				Справочник.Пользователи КАК Пользователи
+					ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроекты КАК ДоступныеПроекты
+						ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+						ПО
+							ДоступныеПроекты.Проект = ДоступныеПроектыЗаказчика.Проект
+								И ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь
+					ПО
+						Пользователи.Ссылка = ДоступныеПроекты.Супервайзер
+		
+			ОБЪЕДИНИТЬ ВСЕ
+		
+			ВЫБРАТЬ
+				Пользователи.Ссылка
+			ИЗ
+				Справочник.Пользователи КАК Пользователи
+					ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроекты КАК ДоступныеПроекты
+						ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+						ПО
+							ДоступныеПроекты.Проект = ДоступныеПроектыЗаказчика.Проект
+								И ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь
+					ПО
+						Пользователи.Ссылка = ДоступныеПроекты.МедПредставитель)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ГДЕ Ссылка = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Теги</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ПанельОтчетовМедПреды</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ДоступныеПроекты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеВизитовДляОтчета</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ДанныеВизитовДляОтчета ИЗ РегистрНакопления.ДанныеВизитовДляОтчета КАК ДанныеВизитовДляОтчета
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+	ПО ДанныеВизитовДляОтчета.Проект = ДоступныеПроектыЗаказчика.Проект
+		И (ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.КонтактныеЛица</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ЕженедельныйОтчетПоВизитамКВрачамТакеда</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.МедПреды</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.БизнесРегионы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.КатегорииВрачей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыМероприятий</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ВидыМероприятий ИЗ Справочник.ВидыМероприятий КАК ВидыМероприятий
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+	ПО ВидыМероприятий.Владелец = ДоступныеПроектыЗаказчика.Проект
+		И (ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ЕженедельныйОтчетПоВизитамВАптекиТакеда</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Визит</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>Визит ИЗ Документ.Визит КАК Визит
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+	ПО Визит.Проект = ДоступныеПроектыЗаказчика.Проект
+		И (ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Товары</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>Товары ГДЕ Товары.Ссылка В
+			(ВЫБРАТЬ
+				ПроектыПрепараты.Товар КАК Товар
+			ИЗ
+				РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+					ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Проекты.Препараты КАК ПроектыПрепараты
+					ПО
+						ДоступныеПроектыЗаказчика.Проект = ПроектыПрепараты.Ссылка
+							И ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь
+		
+			ОБЪЕДИНИТЬ ВСЕ
+		
+			ВЫБРАТЬ
+				ПроектыКонкуренты.Товар
+			ИЗ
+				РегистрСведений.ДоступныеПроектыЗаказчика КАК ДоступныеПроектыЗаказчика
+					ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Проекты.Конкуренты КАК ПроектыКонкуренты
+					ПО
+						ДоступныеПроектыЗаказчика.Проект = ПроектыКонкуренты.Ссылка
+							И ДоступныеПроектыЗаказчика.Заказчик = &amp;ТекущийПользователь)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СпециализацияВрача</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+</Rights>

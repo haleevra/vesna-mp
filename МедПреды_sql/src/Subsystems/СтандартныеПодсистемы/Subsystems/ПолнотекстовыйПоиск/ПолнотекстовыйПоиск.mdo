@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3323ca68-1382-4710-a933-23fc56588935">
+  <name>ПолнотекстовыйПоиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полнотекстовый поиск</value>
+  </synonym>
+  <comment></comment>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>e70a6eab-791f-4c70-bb92-f069c7486d1b</content>
+  <content>f74f97b7-4cbf-4124-b441-d8bb5d9b1634</content>
+  <content>CommonModule.ПолнотекстовыйПоискСервер</content>
+  <content>ScheduledJob.ОбновлениеИндексаППД</content>
+  <content>ScheduledJob.СлияниеИндексаППД</content>
+  <content>DataProcessor.ПолнотекстовыйПоискВДанных</content>
+  <content>Constant.ИспользоватьПолнотекстовыйПоиск</content>
+  <content>FunctionalOption.ИспользоватьПолнотекстовыйПоиск</content>
+  <content>CommonModule.ПолнотекстовыйПоискСерверПереопределяемый</content>
+  <content>CommonForm.ФормаПоиска</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d952390b-c9fb-4b18-908a-ae71058d9e89">
+  <name>МедПреды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мед. представители</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.СостояниеПользователя02</picture>
+  </picture>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Теги</content>
+  <content>Catalog.СпециализацияВрача</content>
+  <content>Catalog.КонтактныеЛица</content>
+  <content>Catalog.Товары</content>
+  <content>Catalog.КатегорииВрачей</content>
+  <content>Catalog.Проекты</content>
+  <content>Document.Визит</content>
+  <content>Enum.СостоянияВизитов</content>
+  <content>Enum.ВидыВизитов</content>
+  <content>Enum.ВидыКонтрагентов</content>
+  <content>Enum.ТипыКонтрагентов</content>
+  <content>Catalog.ВидыМероприятий</content>
+  <content>Document.Мероприятие</content>
+  <content>Catalog.ВидыОтчетов</content>
+  <content>AccumulationRegister.ДанныеВизитовДляОтчета</content>
+  <content>Report.ЕженедельныйОтчетПоВизитамВАптекиТакеда</content>
+  <content>Report.ЕженедельныйОтчетПоВизитамКВрачамТакеда</content>
+  <content>CommonCommand.ПанельОтчетовМедПреды</content>
+  <content>Catalog.БизнесРегионы</content>
+  <subsystems>МобильныйКлиент</subsystems>
+</mdclass:Subsystem>

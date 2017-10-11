@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54d18335-0ff2-430e-9d1f-5fdebf200696">
+  <name>ПроверитьФормулу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить формулу</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>
