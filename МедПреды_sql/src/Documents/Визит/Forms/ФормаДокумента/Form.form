@@ -661,17 +661,17 @@
               <segments>Объект.ЧекЛист</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
-            <excludedCommands>Copy</excludedCommands>
-            <excludedCommands>SortListAsc</excludedCommands>
-            <excludedCommands>MoveUp</excludedCommands>
-            <excludedCommands>OutputList</excludedCommands>
-            <excludedCommands>SelectAll</excludedCommands>
-            <excludedCommands>SortListDesc</excludedCommands>
-            <excludedCommands>ShowRowRearrangement</excludedCommands>
-            <excludedCommands>Delete</excludedCommands>
-            <excludedCommands>Add</excludedCommands>
-            <excludedCommands>ShowMultipleSelection</excludedCommands>
-            <excludedCommands>MoveDown</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.Copy</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.SortListAsc</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.MoveUp</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.OutputList</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.SelectAll</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.SortListDesc</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.ShowRowRearrangement</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.Delete</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.Add</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.ShowMultipleSelection</excludedCommands>
+            <excludedCommands>Form.Item.ЧекЛист.StandardCommand.MoveDown</excludedCommands>
             <items xsi:type="form:FormField">
               <name>ЧекЛистПункт</name>
               <id>179</id>
@@ -1003,20 +1003,20 @@
               <segments>Объект.Препараты</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
-            <excludedCommands>Copy</excludedCommands>
-            <excludedCommands>SortListAsc</excludedCommands>
-            <excludedCommands>MoveUp</excludedCommands>
-            <excludedCommands>CancelSearch</excludedCommands>
-            <excludedCommands>OutputList</excludedCommands>
-            <excludedCommands>SelectAll</excludedCommands>
-            <excludedCommands>SortListDesc</excludedCommands>
-            <excludedCommands>CopyToClipboard</excludedCommands>
-            <excludedCommands>ShowRowRearrangement</excludedCommands>
-            <excludedCommands>Delete</excludedCommands>
-            <excludedCommands>Add</excludedCommands>
-            <excludedCommands>Find</excludedCommands>
-            <excludedCommands>ShowMultipleSelection</excludedCommands>
-            <excludedCommands>MoveDown</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.Copy</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.SortListAsc</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.MoveUp</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.CancelSearch</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.OutputList</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.SelectAll</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.SortListDesc</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.CopyToClipboard</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.ShowRowRearrangement</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.Delete</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.Add</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.Find</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.ShowMultipleSelection</excludedCommands>
+            <excludedCommands>Form.Item.Препараты.StandardCommand.MoveDown</excludedCommands>
             <items xsi:type="form:FormField">
               <name>ПрепаратыТовар</name>
               <id>211</id>
@@ -1421,20 +1421,20 @@
               <segments>Объект.Цены</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
-            <excludedCommands>Copy</excludedCommands>
-            <excludedCommands>SortListAsc</excludedCommands>
-            <excludedCommands>MoveUp</excludedCommands>
-            <excludedCommands>CancelSearch</excludedCommands>
-            <excludedCommands>OutputList</excludedCommands>
-            <excludedCommands>SelectAll</excludedCommands>
-            <excludedCommands>SortListDesc</excludedCommands>
-            <excludedCommands>CopyToClipboard</excludedCommands>
-            <excludedCommands>ShowRowRearrangement</excludedCommands>
-            <excludedCommands>Delete</excludedCommands>
-            <excludedCommands>Add</excludedCommands>
-            <excludedCommands>Find</excludedCommands>
-            <excludedCommands>ShowMultipleSelection</excludedCommands>
-            <excludedCommands>MoveDown</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.Copy</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.SortListAsc</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.MoveUp</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.CancelSearch</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.OutputList</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.SelectAll</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.SortListDesc</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.CopyToClipboard</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.ShowRowRearrangement</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.Delete</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.Add</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.Find</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.ShowMultipleSelection</excludedCommands>
+            <excludedCommands>Form.Item.Цены.StandardCommand.MoveDown</excludedCommands>
             <items xsi:type="form:FormField">
               <name>ЦеныТовар</name>
               <id>239</id>
@@ -1795,10 +1795,16 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:ImageFieldExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>ФотоАдресФайлаВоВременномХранилищеНажатие</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <horizontalStretch>true</horizontalStretch>
               <verticalStretch>true</verticalStretch>
+              <pictureSize>Proportionally</pictureSize>
+              <zoomable>true</zoomable>
               <hyperlink>true</hyperlink>
             </extInfo>
           </items>
@@ -2987,11 +2993,11 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Reread</excludedCommands>
-  <excludedCommands>UndoPosting</excludedCommands>
-  <excludedCommands>Post</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>Write</excludedCommands>
+  <excludedCommands>Form.StandardCommand.Reread</excludedCommands>
+  <excludedCommands>Form.StandardCommand.UndoPosting</excludedCommands>
+  <excludedCommands>Form.StandardCommand.Post</excludedCommands>
+  <excludedCommands>Form.StandardCommand.Delete</excludedCommands>
+  <excludedCommands>Form.StandardCommand.Write</excludedCommands>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
