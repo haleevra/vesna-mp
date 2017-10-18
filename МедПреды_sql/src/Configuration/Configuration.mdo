@@ -13,6 +13,7 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="356d08cf-adea-4356-b28b-ea746ae229d1"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="29fcfdf7-41d5-40c4-95b5-ba693c4c9f2a"/>
   <namePrefix></namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -20,7 +21,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</defaultRoles>
   <vendor>Академия Проф-ИТ</vendor>
-  <version>1.0.1.39</version>
+  <version>1.0.1.40</version>
   <updateCatalogAddress></updateCatalogAddress>
   <mainSectionPicture/>
   <defaultLanguage>Language.Русский</defaultLanguage>
@@ -32,6 +33,8 @@
     <key>ru</key>
     <value>DENIS Pharm Group мед.представители</value>
   </detailedInformation>
+  <logo/>
+  <splash/>
   <copyright>
     <key>ru</key>
     <value>Академия Проф-ИТ</value>
@@ -656,6 +659,7 @@
   <commonModules>CommonModule.ПолучениеФайловИзИнтернетаКлиент</commonModules>
   <commonModules>CommonModule.ПолучениеФайловИзИнтернетаКлиентСервер</commonModules>
   <commonModules>CommonModule.ПолучениеФайловИзИнтернетаСлужебный</commonModules>
+  <commonAttributes>CommonAttribute.СлужебныйКомментарий</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <exchangePlans>ExchangePlan.МобильноеПриложение</exchangePlans>
   <xDTOPackages>XDTOPackage.ApplicationExtensionsManifest_1_0_0_1</xDTOPackages>
