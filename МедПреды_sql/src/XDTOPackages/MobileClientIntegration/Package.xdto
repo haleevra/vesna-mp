@@ -3,7 +3,7 @@
 	<import namespace="http://v8.1c.ru/8.3/data/ext"/>
 	<valueType name="ТипСостоянияВизитов" base="xs:string" variety="Atomic">
 		<enumeration xsi:type="xs:string">Открыт</enumeration>
-		<enumeration xsi:type="xs:string">ВРаботе</enumeration>
+		<enumeration xsi:type="xs:string">ВРвботе</enumeration>
 		<enumeration xsi:type="xs:string">Выполнен</enumeration>
 		<enumeration xsi:type="xs:string">Закрыт</enumeration>
 	</valueType>
@@ -96,6 +96,7 @@
 	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Документ" base="d2p1:Объект">
 		<property name="Номер" type="xs:string" lowerBound="0" nillable="true"/>
 		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="СлужебныйКомментарий" type="xs:string" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.prof-it.ru/ma/MobileExchange" name="Визиты" base="d2p1:Документ">
 		<property name="Операция" type="d2p1:ТипПрофилиМобильногоПриложения" lowerBound="0"/>
