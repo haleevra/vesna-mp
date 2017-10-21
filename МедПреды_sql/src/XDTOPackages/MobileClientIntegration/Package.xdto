@@ -3,7 +3,7 @@
 	<import namespace="http://v8.1c.ru/8.3/data/ext"/>
 	<valueType name="ТипСостоянияВизитов" base="xs:string" variety="Atomic">
 		<enumeration xsi:type="xs:string">Открыт</enumeration>
-		<enumeration xsi:type="xs:string">ВРвботе</enumeration>
+		<enumeration xsi:type="xs:string">ВРаботе</enumeration>
 		<enumeration xsi:type="xs:string">Выполнен</enumeration>
 		<enumeration xsi:type="xs:string">Закрыт</enumeration>
 	</valueType>
